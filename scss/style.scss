@@ -31,6 +31,78 @@
   line-height: 37px;
 }
 
+.result {
+  padding: 70px 150px 130px;
+  background: linear-gradient(89.61deg, #bf13fc -36.23%, #000000 112.62%);
+
+  .h3-result {
+    text-align: center;
+
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+
+    color: #ffffff;
+
+    margin-bottom: 50px;
+  }
+
+  .grid-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+  }
+
+  .grid-item {
+    display: flex;
+    align-items: center;
+
+    width: 370px;
+    height: 100px;
+    span {
+      margin-right: 20px;
+
+      font-weight: 600;
+      font-size: 45px;
+
+      color: #d3caff;
+    }
+
+    p {
+      flex: 1;
+      font-size: 15px;
+      color: #ffffff;
+
+      b {
+        font-size: 15px;
+      }
+    }
+
+    padding: 20px;
+
+    background: linear-gradient(180deg, #ae88dd 0%, #8750cb 100%);
+    border-radius: 10px;
+  }
+
+  .button-start {
+    margin-top: 70px;
+    width: 340px;
+    font-weight: 600;
+    font-size: 25px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ffffff;
+
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+
+    background: transparent;
+  }
+}
+
 .program-course {
   width: 100%;
   padding: 0 100px;
