@@ -7,15 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VSEZAKUPKI</title>
 
-
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@400;600;700;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -508,7 +523,21 @@
 
             </section>
 
-
+            <!-- <div class="carousel owl-carousel">
+                <div class="card">
+                    <div> Your Content1 </div>
+                </div>
+                <div class="card">
+                    <div> Your Content2 </div>
+                </div>
+                <div class="card">
+                    <div> Your Content3 </div>
+                </div>
+            
+                <div class="card">
+                    <div> Your Content3 </div>
+                </div>
+            </div> -->
 
             <section class="tarifs bg-purple">
                 <h3 class="h3-title text-center">ТАРИФЫ</h3>
@@ -516,12 +545,13 @@
                 <h4 class="h4-title text-center">“Я САМ”</h4>
                 <p class="tarif-type-title text-center">goszakup.gov.kz | zakup.sk.kz</p>
 
-
-                <div class="card-holder justify-between mb-150">
+                <div class="card-holder card-holder-1 justify-between mb-150">
                     <div class="card-item">
                         <div class="img-holder-1">
                             <img src="src/images/goszakup.svg" alt="holder">
                         </div>
+                        <h4 class="h4-title mobile text-center">“Я САМ”</h4>
+                        <p class="tarif-type-title mobile text-center">goszakup.gov.kz | zakup.sk.kz</p>
                         <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> НА ПЛОЩАДКЕ Государственных закупок ЗАКУПОК
@@ -581,6 +611,10 @@
                         <div class="img-holder-1">
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
+
+                        <h4 class="h4-title mobile text-center">“Я САМ”</h4>
+                        <p class="tarif-type-title mobile text-center">goszakup.gov.kz | zakup.sk.kz</p>
+
                         <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> НА ПЛОЩАДКЕ АО ФНБ САМРУК КАЗЫНА
@@ -642,6 +676,10 @@
                             <img src="src/images/goszakup.svg" alt="holder">
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
+
+                        <h4 class="h4-title mobile text-center">“Я САМ”</h4>
+                        <p class="tarif-type-title mobile text-center">goszakup.gov.kz | zakup.sk.kz</p>
+
                         <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> НА ПЛОЩАДках Государственных зАКУПОК И АО ФНБ САМРУК КАЗЫНА
@@ -706,7 +744,6 @@
                 <h4 class="h4-title text-center">“СПЕЦИАЛИСТ”</h4>
                 <p class="tarif-type-title text-center">goszakup.gov.kz | zakup.sk.kz</p>
 
-
                 <div class="card-holder card-holder-2 justify-around mb-150">
                     <div class="card-item">
                         <div class="img-holder-2">
@@ -714,6 +751,8 @@
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
                         <p class="h5-title">СПЕЦИАЛИСТ 1</p>
+                        <p class="tarif-type-title mobile mobile-1 text-center">goszakup.gov.kz</p>
+                        <p class="tarif-type-title mobile text-center">zakup.sk.kz</p>
 
                         <ul>
                             <li>
@@ -782,6 +821,8 @@
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
                         <p class="h5-title">СПЕЦИАЛИСТ 2</p>
+                        <p class="tarif-type-title mobile mobile-1 text-center">goszakup.gov.kz</p>
+                        <p class="tarif-type-title mobile text-center">zakup.sk.kz</p>
 
                         <ul>
                             <li>
@@ -855,6 +896,10 @@
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
 
+                        <p class="h5-title">“PROFI”</p>
+                        <p class="tarif-type-title mobile mobile-1 text-center">goszakup.gov.kz</p>
+                        <p class="tarif-type-title mobile text-center">zakup.sk.kz</p>
+
                         <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> на площадках - <b>Государственных закупок</b> и <b>АО ФНБ Самрук
@@ -907,7 +952,7 @@
 
                         </ul>
 
-                        <div class="discount">
+                        <div class="discount discount3">
                             -20%
                         </div>
 
@@ -928,9 +973,10 @@
             </section>
 
             <section class="form-registration m-auto">
-                <p class="form-title text-center">Заполни заявку прямо сейчас</p>
+                <p class="form-title">Заполни заявку прямо сейчас</p>
 
-                <p class="text-center">и получи доступ к предобучению состоящий из <b>11 уроков</b> в ПОДАРОК! 🎁</p>
+                <p class="text-center p-title">и получи доступ к предобучению состоящий из <b>11 уроков</b> в ПОДАРОК!
+                    🎁</p>
 
                 <form method="post" id="emailForm" class="form-container text-center mt-50">
                     <div class="form-group">
@@ -948,7 +994,8 @@
                         </label>
                     </div>
 
-                    <button class="form-button" type="submit">Перезвоните мне</button>
+                    <button class="form-button" type="submit"><span class="desktop">Перезвоните мне</span><span
+                            class="mobile.active">Отправить</span></button>
                 </form>
 
 
@@ -984,7 +1031,7 @@
 
     <script src="./js/app.js"></script>
     <script src="./js/menu.js"></script>
-
+    <script src="./js/carousel.js"></script>
 
     <!-- Sending Email -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>

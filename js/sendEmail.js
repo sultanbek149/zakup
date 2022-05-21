@@ -13,7 +13,7 @@ function sendMail(e) {
 
     Email.send({
         SecureToken: "74c06a47-6f01-4dd8-a8e3-8d5c5d81847f",
-        To:   'kursi@vsezakupki.kz',
+        To:   'allaniyazovsultan1@gmail.com',
         From: 'sultanhahahamaratov@gmail.com',
         Subject: "SnowLeopard Feedback contacts",
         Body: `Name:          ${fullName}.<br>

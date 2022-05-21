@@ -3432,7 +3432,8 @@ mb-100 {
 }
 
 body {
-  background: #E5E5E5;
+  background: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -3443,10 +3444,6 @@ a {
 .mx-150 {
   margin-left: 150px;
   margin-right: 150px;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -3997,7 +3994,7 @@ body {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  background: #e5e5e5;
+  background: #fff;
   position: relative;
   padding: 200px 0 0px;
 }
@@ -4229,6 +4226,7 @@ body {
 .tarifs .card-holder .card-item ul {
   text-transform: lowercase;
   margin-bottom: 40px;
+  height: 430px;
 }
 
 .tarifs .card-holder .card-item .img-holder-1,
@@ -4392,7 +4390,8 @@ body {
 }
 
 .tarifs .card-holder.card-holder-3 .card-item {
-  width: 470px;
+  max-width: 470px;
+  width: 100%;
   padding-top: 100px;
   padding-top: 80px;
 }
@@ -4414,6 +4413,7 @@ body {
 .form-registration .form-title {
   font-weight: 900;
   font-size: 50px;
+  text-align: center;
 }
 
 .form-registration input {
@@ -4905,9 +4905,56 @@ body {
   display: block;
 }
 
+.mobile.active {
+  display: none;
+}
+
+.h4-title.mobile,
+.tarif-type-title.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .people-holder {
     margin-bottom: 70px;
+  }
+  .card-holder-1 .discount {
+    display: none;
+  }
+  .card-holder-2 .h5-title,
+  .card-holder-3 .h5-title {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    color: #710199;
+  }
+  .card-holder-3 .tarif-type-title.mobile.mobile-1 {
+    margin-bottom: 2px;
+  }
+  .h4-title,
+  .tarif-type-title {
+    display: none;
+  }
+  .h4-title.mobile,
+  .tarif-type-title.mobile {
+    display: block;
+  }
+  .h4-title.mobile {
+    color: #7801a2;
+  }
+  .tarif-type-title.mobile {
+    color: #000000;
+    margin-bottom: 23px;
+  }
+  .tarifs .h3-title {
+    margin-bottom: 120px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile.active {
+    display: inline;
+    font-size: 27px;
   }
   .tarifs .card-holder .card-item {
     padding: 0px 20px;
@@ -4918,7 +4965,7 @@ body {
     margin-bottom: 20px;
   }
   .tarifs .card-holder .card-item .discount {
-    top: 76%;
+    top: 78.5%;
   }
   .tarifs .card-holder .card-item .text-center.b {
     display: none;
@@ -4968,8 +5015,21 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .tarifs .card-holder .card-item .discount.discount3 {
+    top: 81.5%;
+  }
+  .tarifs .card-holder.card-holder-3 ul {
+    height: 490px;
+  }
+  .result {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .program-course .payment .payment-item {
     width: 90%;
+  }
+  .diagonal-box {
+    font-size: 30px;
   }
   .form-registration {
     padding: 0 20px;
@@ -5039,6 +5099,22 @@ body {
   .program-course .teacher .teacher-title b {
     font-size: 32px;
   }
+  .program-course .teacher .teacher-title .tarifs .card-holder .card-item .price-red {
+    margin-top: 10px;
+  }
+  .program-course .teacher .teacher-title .form-registration > .text-center:not(.form-title) {
+    font-size: 15px;
+  }
+  .tarifs .card-holder.card-holder-3 ul {
+    height: 490px;
+  }
+  .card-holder {
+    padding: 0 60px;
+  }
+  .form-registration .form-container .input-t {
+    padding: 10px 25px;
+    height: 80px;
+  }
   .program-course .step-number {
     font-size: 32px;
   }
@@ -5096,7 +5172,7 @@ body {
   }
   .program-course .teacher .teacher-card ul {
     margin-bottom: 40px;
-    padding: 0 40px;
+    padding: 0 20px;
   }
   .course-people h3 {
     font-style: normal;
@@ -5126,10 +5202,109 @@ body {
   }
 }
 
+@media screen and (max-width: 545px) {
+  .tarifs .card-holder .card-item .discount {
+    right: -30px;
+  }
+  .card-holder {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .card-holder {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .tarifs .card-holder-3 .card-item ul {
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tarifs .card-holder .card-item .discount {
+    width: 95.29px;
+  }
+  .card-holder {
+    padding: 0 30px;
+  }
+  .tarifs .card-holder .card-item .discount {
+    right: -24px;
+  }
+  .banner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .form-registration .form-title {
+    font-size: 30px;
+    text-align: left;
+  }
+  .form-registration .p-title.text-center {
+    text-align: left;
+  }
+  .form-registration .form-container .container {
+    font-size: 18px;
+  }
+  .form-registration .form-container input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .form-registration .form-container input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .form-registration .form-container input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .form-registration .form-container input::placeholder {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .tarifs .card-holder .card-item .discount.discount3 {
+    top: 83.5%;
+    right: -15px;
+  }
+  .card-holder {
+    padding: 0 20px;
+  }
+  .form-registration .form-container .container {
+    font-size: 15px;
+  }
+  .form-registration .form-container .input-t {
+    padding: 5px 17px;
+    height: 65px;
+    border-radius: 10px;
+  }
+  .tarifs .card-holder .card-item .discount {
+    right: -12px;
+  }
+  .form-registration .form-button {
+    height: 70px;
+  }
+  .form-registration .form-container.mt-50 {
+    margin-top: 20px !important;
+  }
+  .form-registration .form-title {
+    font-size: 25px;
+  }
+  .form-registration .p-title.text-center {
+    font-size: 13px;
+  }
+  .form-registration .p-title.text-center b {
+    font-size: 15px;
+  }
+  .form-registration .form-group.mb-50 {
+    margin-bottom: 20px !important;
+  }
   .whatsapp {
-    right: -8px;
-    bottom: -8px;
+    right: 0px;
+    bottom: 0px;
   }
   .result .h3-result {
     font-size: 30px;
