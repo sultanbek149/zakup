@@ -4963,6 +4963,7 @@ a {
   }
   .tarifs .card-holder .card-item ul {
     margin-bottom: 20px;
+    height: unset;
   }
   .tarifs .card-holder .card-item .discount {
     top: 78.5%;
@@ -5228,7 +5229,7 @@ a {
     width: 95.29px;
   }
   .card-holder {
-    padding: 0 30px;
+    padding: 0 35px;
   }
   .tarifs .card-holder .card-item .discount {
     right: -24px;

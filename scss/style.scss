@@ -1554,6 +1554,7 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
 
     ul {
       margin-bottom: 20px;
+      height: unset;
     }
 
     .discount {
@@ -1860,7 +1861,7 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
   }
 
   .card-holder {
-    padding: 0 30px;
+    padding: 0 35px;
   }
 
   .tarifs .card-holder .card-item .discount {
