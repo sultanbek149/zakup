@@ -24,5 +24,4 @@ function sendMail(e) {
     // password 80AC4DD439A67D3C6CDC2F9DB585070706C3
 
     // abcdDCBA1234#
-
 }

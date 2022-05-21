@@ -4529,6 +4529,13 @@ body {
   color: #ffffff;
 }
 
+.form-registration .form-button:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .footer {
   width: 100%;
   max-width: 1200px;
@@ -4848,7 +4855,60 @@ body {
   }
 }
 
+.navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-holder {
+  background-color: #fff;
+  color: #101010;
+  padding: 2rem 0.5rem;
+  position: relative;
+}
+
+.nav-holder .nav-menu {
+  margin: 13px auto;
+}
+
+.nav-holder .nav-menu li {
+  text-align: center;
+  color: #475569;
+  list-style-type: none;
+}
+
+.nav-holder .nav-menu li + li {
+  margin-top: 30px;
+}
+
+.nav-holder .nav-menu .nav-link {
+  text-decoration: none;
+}
+
+.nav-holder .nav-menu .nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-holder .cross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  left: 90%;
+}
+
+.navbar.active {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
+  .people-holder {
+    margin-bottom: 70px;
+  }
   .tarifs .card-holder .card-item {
     padding: 0px 20px;
     padding-top: 80px;
