@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VSEZAKUPKI</title>
 
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +25,7 @@
     <div class="wrapper m-auto">
         <header class="header m-auto d-flex align-center mt-50">
             <div class="logo header__logo d-flex align-center">
-                <img src="src/images/logo.svg" alt="logo" width="60" height="60" class="mr-10">
+                <img src="src/images/logo.svg" alt="logo" class="mr-10">
                 VSE<b>ZAKUPKI</b>
             </div>
             <img src="src/images/pause.svg" class="img-c mr-50 ml-50" alt="center-image" width="200" height="170">
@@ -29,12 +33,167 @@
                 <a href=""><b>Главная</b></a>
                 <a href="">О нас</a>
                 <a href="">Тарифы</a>
-                <a href="">+7 (701) 555 70-15</a>
-                <img src="src/images/hamburger.svg" alt="hambuger" width="30" height="30">
+                <a href="" class="input-tel">+7 (701) 555 70-15</a>
+                <img src="src/images/hamburger.svg" alt="hambuger">
             </div>
         </header>
 
         <main class="main m-auto">
+
+            <div class="whatsapp">
+                <div style="position: relative;">
+                    <div class="parent">
+                    </div>
+
+                    <div class="child">
+                    </div>
+
+                    <div class="img">
+                        <a href="https://api.whatsapp.com/send?phone=77082845343">
+                            <img src="src/images/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>
+                        Стань специалистом по тендерам уже через 2 недели практического обучения
+                    </h1>
+
+                    <h2>
+                        Онлайн курс для <b>поставщиков</b>
+                    </h2>
+
+                    <div class="banner-discount">
+                        <p> <span class="text-purple">-20% СКИДКА</span> закончится через</p>
+                        <p class="banner-timer">14:23:59:00</p>
+                    </div>
+
+                    <button class="button-start">
+                        Начать зарабатывать
+                    </button>
+                </div>
+                <div class="banner-image">
+                    <img src="src/images/banner-image.svg" alt="BannerImg">
+                </div>
+            </section>
+
+            <div class="banner-under">
+                <img class="banner-mobile" src="src/images/banner-under.png" alt="">
+                <img class="banner-desktop" src="src/images/banner-desktop.png" alt="">
+            </div>
+
+
+            <section class="switch-form">
+                <h3 class="h3-swithc-form">
+                    Заполни заявку прямо сейчас
+                </h3>
+
+                <p class="title-desc">
+                    и получи доступ к предобучению состоящий из 11 уроков совершенно бесплатно!
+                </p>
+
+                <div class="img img-background">
+                    <img class="gift-desktop" src="src/images/gift.svg" alt="">
+                    <img class="gift-mobile" src="src/images/gift-mobile.svg" alt="">
+                </div>
+
+                <div class="text-center">
+                    <button class="button-start">Заполнить заявку</button>
+                </div>
+
+            </section>
+
+
+            <section class="course-people">
+                <h3>ДЛЯ КОГО ПРЕДНАЗНАЧЕН КУРС?</h3>
+
+                <div class="people-holder">
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="src/images/image 12.svg" alt="">
+                        </div>
+
+                        <p class="item-title">
+                            НОВИЧОК
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь освоить востребованную специальность и получать высокий заработок
+                        </p>
+                    </div>
+
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="src/images/image 13.svg" alt="">
+                        </div>
+
+                        <p class="item-title">
+                            СПЕЦИАЛИСТ В ОБЛАСТИ ЗАКУПОК
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь повысить квалификацию и быть в курсе всех изменений
+                        </p>
+                    </div>
+
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="src/images/image 14.svg" alt="">
+                        </div>
+
+                        <p class="item-title">
+                            ПРЕДПРИНИМАТЕЛЬ
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь открыть ИП и работать на себя, выигрывая тендеры
+                        </p>
+                    </div>
+
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="src/images/image 15.svg" alt="">
+                        </div>
+
+                        <p class="item-title">
+                            БИЗНЕСМЕН
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь расширить рынок продаж своих товаров, работ или услуг
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="button-start">
+                        Пройти обучение
+                    </button>
+                </div>
+
+            </section>
+
+            <div class="diagonal-box">
+                ЧТО ТЫ УЗНАЕШЬ В ЭТОМ КУРСЕ?
+            </div>
+
+            <section class="info-course">
+
+
+
+                <div class="img text-center">
+                    <img src="src/images/brain.svg" alt="">
+                </div>
+
+                <div class="text-center">
+                    <button class="button-start">
+                        Получить ответы
+                    </button>
+                </div>
+            </section>
 
 
             <section class="result">
@@ -121,7 +280,7 @@
                                 </div>
                             </div>
                             <div class="step d-flex">
-                                <div class="step-number">3</div>
+                                <div class="step-number n3">3</div>
                                 <div class="step-desc">Способ закупки “Запрос ценовых предложений”
                                 </div>
                             </div>
@@ -187,7 +346,7 @@
                                 </div>
                             </div>
                             <div class="step d-flex">
-                                <div class="step-number">3</div>
+                                <div class="step-number n3">3</div>
                                 <div class="step-desc">Способ закупки “Запрос ценовых предложений”
                                 </div>
                             </div>
@@ -340,7 +499,7 @@
                         <div class="img-holder-1">
                             <img src="src/images/goszakup.svg" alt="holder">
                         </div>
-                        <ul class="mb-40">
+                        <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> НА ПЛОЩАДКЕ Государственных закупок ЗАКУПОК
                             </li>
@@ -392,14 +551,14 @@
                         <p class="price-desc text-center mb-30">выгоднее на <b>32.000₸</b></p>
 
 
-                        <div class="text-center"><button class="button-start">Начать обучение</button></div>
+                        <div class="text-center b"><button class="button-start">Начать обучение</button></div>
                     </div>
 
                     <div class="card-item">
                         <div class="img-holder-1">
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
-                        <ul class="mb-40">
+                        <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> НА ПЛОЩАДКЕ АО ФНБ САМРУК КАЗЫНА
                             </li>
@@ -450,7 +609,7 @@
 
                         <p class="price-desc text-center mb-30">выгоднее на <b>22.000₸</b></p>
 
-                        <div class="text-center">
+                        <div class="text-center b">
                             <button class="button-start">Начать обучение</button>
                         </div>
                     </div>
@@ -460,7 +619,7 @@
                             <img src="src/images/goszakup.svg" alt="holder">
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
-                        <ul class="mb-40">
+                        <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> НА ПЛОЩАДках Государственных зАКУПОК И АО ФНБ САМРУК КАЗЫНА
                             </li>
@@ -511,7 +670,7 @@
 
                         <p class="price-desc text-center mb-30">выгоднее на <b>22.000₸</b></p>
 
-                        <div class="text-center">
+                        <div class="text-center b">
                             <button class="button-start">
                                 Начать обучение
                             </button>
@@ -533,7 +692,7 @@
                         </div>
                         <p class="h5-title">СПЕЦИАЛИСТ 1</p>
 
-                        <ul class="mb-20">
+                        <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> на площадках - <b>Государственных закупок</b> и <b>АО ФНБ Самрук
                                     Казына</b>
@@ -586,7 +745,7 @@
 
                         <p class="price-desc text-center mb-30">выгоднее на <b>55.000₸</b></p>
 
-                        <div class="text-center">
+                        <div class="text-center b">
                             <button class="button-start">
                                 Начать обучение
                             </button>
@@ -601,7 +760,7 @@
                         </div>
                         <p class="h5-title">СПЕЦИАЛИСТ 2</p>
 
-                        <ul class="mb-20">
+                        <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> на площадках - <b>Государственных закупок</b> и <b>АО ФНБ Самрук
                                     Казына</b>
@@ -654,7 +813,7 @@
 
                         <p class="price-desc text-center mb-30">выгоднее на <b>67.000₸</b></p>
 
-                        <div class="text-center">
+                        <div class="text-center b">
                             <button class="button-start">
                                 Начать обучение
                             </button>
@@ -673,7 +832,7 @@
                             <img src="src/images/samruk.svg" alt="holder">
                         </div>
 
-                        <ul class="mb-20">
+                        <ul>
                             <li>
                                 <b>ОБУЧЕНИЕ С нуля</b> на площадках - <b>Государственных закупок</b> и <b>АО ФНБ Самрук
                                     Казына</b>
@@ -735,7 +894,7 @@
 
                         <p class="price-desc text-center mb-30">выгоднее на <b>128.000₸</b></p>
 
-                        <div class="text-center">
+                        <div class="text-center b">
                             <button class="button-start">
                                 Начать обучение
                             </button>
@@ -750,13 +909,13 @@
 
                 <p class="text-center">и получи доступ к предобучению состоящий из <b>11 уроков</b> в ПОДАРОК! 🎁</p>
 
-                <form action="#" class="form-container text-center mt-50">
-                    <div class="form-group"><input class="input-t w100p" type="text" id="fname" name="fname"
-                            placeholder="Имя">
+                <form method="post" id="emailForm" class="form-container text-center mt-50">
+                    <div class="form-group">
+                        <input class="input-t w100p" type="text" id="fname" name="fname" placeholder="Имя">
                         <div class="bt-line"></div>
                     </div>
-                    <div class="form-group"><input class="input-t w100p" type="tel" id="fphone" name="fphone"
-                            placeholder="Номeр телефона">
+                    <div class="form-group">
+                        <input class="input-t w100p" type="tel" id="pNumber" name="fphone" placeholder="Номeр телефона">
                         <div class="bt-line"></div>
                     </div>
                     <div class="form-group mb-50">
@@ -766,7 +925,7 @@
                         </label>
                     </div>
 
-                    <button class="form-button">Перезвоните мне</button>
+                    <button class="form-button" type="submit">Перезвоните мне</button>
                 </form>
 
 
@@ -799,6 +958,12 @@
 
 
     </div>
+
+    <script src="./js/app.js"></script>
+
+
+    <!-- Sending Email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
