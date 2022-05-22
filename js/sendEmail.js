@@ -16,7 +16,7 @@ function sendMail(e) {
         To:   'allaniyazovsultan1@gmail.com',
         From: 'sultanhahahamaratov@gmail.com',
         Subject: "SnowLeopard Feedback contacts",
-        Body: `Name:          ${fullName}.<br>
+        Body: `Name:              ${fullName}.<br>
                Phone number:  ${pNumber}.`
     }).then(console.log('The message has been sent!'));
     

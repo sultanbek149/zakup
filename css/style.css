@@ -4226,7 +4226,7 @@ a {
 .tarifs .card-holder .card-item ul {
   text-transform: lowercase;
   margin-bottom: 40px;
-  height: 430px;
+  height: 460px;
 }
 
 .tarifs .card-holder .card-item .img-holder-1,
@@ -4350,6 +4350,10 @@ a {
   color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#c65aec), to(#8100ae));
   background: linear-gradient(180deg, #c65aec 0%, #8100ae 100%);
+}
+
+.tarifs .card-holder.card-holder-1 {
+  margin-bottom: 150px;
 }
 
 .tarifs .h5-title {
@@ -4569,6 +4573,10 @@ a {
   }
 }
 
+.tarifs .card-holder.card-holder-1 .card-item {
+  padding-top: 85px;
+}
+
 @media screen and (max-width: 1440px) {
   .card-holder {
     -ms-flex-wrap: wrap;
@@ -4577,11 +4585,14 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .tarifs .card-holder .card-item ul {
+    height: unset;
+  }
 }
 
 @media screen and (max-width: 1400px) {
   .card-holder {
-    padding: 0 80px;
+    padding: 0px 100px;
     gap: 150px;
   }
   .people-holder {
@@ -4658,7 +4669,89 @@ a {
   }
 }
 
+.owl-next.disappear,
+.owl-prev.disappear {
+  display: none;
+}
+
+.carousel.card-holder {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
+  .tarifs .tarif-type-title.tarif-type-title-1 {
+    margin-bottom: 50px;
+  }
+  .carousel.card-holder {
+    display: block;
+  }
+  .card-holder:not(.carousel) {
+    display: none;
+  }
+  .carousel .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF !important;
+  }
+  .carousel .owl-dots {
+    text-align: center;
+  }
+  .carousel.card-holder-2 .owl-dots {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .carousel .owl-dot.active {
+    background-color: #FFFFFF !important;
+  }
+  .carousel.card-holder-2 {
+    margin-bottom: 100px;
+  }
+  .carousel.card-holder-1, .carousel.card-holder-2 {
+    padding: 0px 0px;
+    gap: 0;
+  }
+  .carousel.card-holder-1 .card-item, .carousel.card-holder-2 .card-item {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .carousel.card-holder-1 .owl-next,
+  .carousel.card-holder-1 .owl-prev, .carousel.card-holder-2 .owl-next,
+  .carousel.card-holder-2 .owl-prev {
+    position: absolute;
+  }
+  .carousel.card-holder-1 .owl-next, .carousel.card-holder-2 .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(128.09deg, #d3caff 3.3%, rgba(211, 202, 255, 0) 128.86%) !important;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    top: 45%;
+    left: 85%;
+  }
+  .carousel.card-holder-1 .owl-next i, .carousel.card-holder-2 .owl-next i {
+    position: relative;
+    top: -5px;
+    left: 0px;
+  }
+  .carousel.card-holder-1 .owl-prev, .carousel.card-holder-2 .owl-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 44.7%;
+    left: 10%;
+    background: linear-gradient(124.73deg, #ff68ff -91.23%, rgba(255, 104, 255, 0) 86.93%) !important;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .carousel.card-holder-1 .owl-prev i, .carousel.card-holder-2 .owl-prev i {
+    position: relative;
+    top: -3px;
+    left: 0px;
+  }
   .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4915,8 +5008,18 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .card-holder-2 .tarif-type-title.mobile.mobile-1 {
+    margin-bottom: 0px;
+  }
   .people-holder {
     margin-bottom: 70px;
+  }
+  .tarifs .h3-title {
+    margin-bottom: 60px;
+  }
+  .card-holder {
+    padding: 0px 50px;
+    gap: 150px;
   }
   .card-holder-1 .discount {
     display: none;
@@ -4945,9 +5048,6 @@ a {
   .tarif-type-title.mobile {
     color: #000000;
     margin-bottom: 23px;
-  }
-  .tarifs .h3-title {
-    margin-bottom: 120px;
   }
   .desktop {
     display: none;
@@ -5013,9 +5113,22 @@ a {
         -ms-flex-pack: right;
             justify-content: right;
   }
+  .carousel {
+    position: relative;
+  }
+  .carousel.card-holder {
+    padding: 0 0;
+  }
+  .carousel .card-item {
+    margin-top: 60px;
+    margin-left: 205px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .carousel.card-holder-1 .owl-prev {
+    left: 7.5%;
+  }
   .tarifs .card-holder .card-item .discount.discount3 {
     top: 81.5%;
   }
@@ -5266,7 +5379,36 @@ a {
   }
 }
 
+@media screen and (max-width: 475px) {
+  .carousel.card-holder-1 .owl-next {
+    left: 87%;
+  }
+  .carousel.card-holder-1 .owl-prev {
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .carousel.card-holder-1 .owl-next {
+    top: 47%;
+    left: 90%;
+  }
+  .carousel.card-holder-1 .owl-prev {
+    top: 47%;
+    left: 1.5%;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .carousel.card-holder-1 .owl-next {
+    left: 87%;
+  }
+  .carousel.card-holder-1 .owl-prev {
+    left: 3.5%;
+  }
+  .tarifs .carousel.card-holder.card-holder-1 .card-item {
+    width: 330px;
+  }
   .tarifs .card-holder .card-item .discount.discount3 {
     top: 83.5%;
     right: -15px;
@@ -5466,5 +5608,32 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .tarifs .card-holder .card-item {
+    width: 335px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .tarifs .card-holder .card-item {
+    width: 315px;
+  }
+  .card-holder-3 {
+    padding: 0 25px;
+  }
+  .carousel.card-holder-1 .owl-next {
+    left: 90%;
+  }
+  .carousel.card-holder-1 .owl-prev {
+    left: 0.5%;
+  }
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
