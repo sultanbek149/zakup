@@ -1,24 +1,6 @@
 @import "macro-css/index.scss";
 @import "settings/config.scss";
 
-// $purple-circle: url("../src/images/purple-circle.svg");
-// $purple-circle2: url("../src/images/purple-circle2.svg");
-// $empty-triangle: url("../src/images/empty-triangle.svg");
-// $thunder: url("../src/images/thunder.svg");
-// $stars: url("../src/images/stars.svg");
-// $small-orange-circle: url("../src/images/small-orange-circle.svg");
-// $orange-triangle: url("../src/images/orange-triangle.svg");
-// $orange-circle: url("../src/images/orange-circle.svg");
-// $small-orange-circle: url("../src/images/small-orange-circle.svg");
-
-// .wrapper {
-//   background-image: $purple-circle, $empty-triangle, $orange-circle,
-//     $orange-triangle, $small-orange-circle, $purple-circle2;
-//   background-repeat: no-repeat;
-//   background-position-x: 97%, 87%, 72%, 61%, 43%, 3%;
-//   background-position-y: 1%, 3%, 3.8%, 3.8%, 4.5%, 0.8%;
-// }
-
 .bg-purple {
   background: linear-gradient(180deg, #7a00a5 0%, #bd00ff 99.09%);
 }
