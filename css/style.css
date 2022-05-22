@@ -4130,7 +4130,6 @@ a {
   list-style: none;
   padding-left: 18px;
   font-size: 20px;
-  text-transform: lowercase;
   color: #000000;
 }
 
@@ -4314,6 +4313,7 @@ a {
 
 .tarifs .card-holder.card-holder-1 .card-item ul {
   height: 410px;
+  text-transform: lowercase;
 }
 
 .tarifs .card-holder.card-holder-1 .card-item .discount {
@@ -4337,9 +4337,7 @@ a {
 }
 
 .tarifs .card-holder .card-item ul {
-  text-transform: lowercase;
   margin-bottom: 40px;
-  height: 460px;
 }
 
 .tarifs .card-holder .card-item .img-holder-1,
@@ -4497,6 +4495,7 @@ a {
 
 .tarifs .card-holder.card-holder-2 ul {
   height: 420px;
+  margin-bottom: 60px;
 }
 
 .tarifs .card-holder.card-holder-2 .discount {
@@ -4516,12 +4515,12 @@ a {
   padding-top: 80px;
 }
 
-.tarifs .card-holder.card-holder-3 ul {
-  height: 470px;
+.tarifs .card-holder.card-holder-3 .card-item ul {
+  margin-bottom: 30px;
 }
 
 .tarifs .card-holder.card-holder-3 .discount {
-  top: 69%;
+  top: 72%;
 }
 
 .form-registration {
@@ -4888,6 +4887,9 @@ a {
 }
 
 @media only screen and (max-width: 1024px) {
+  .header {
+    margin-top: 30px;
+  }
   .tarifs .tarif-type-title {
     margin-bottom: 30px;
   }
@@ -5078,8 +5080,8 @@ a {
     width: 230px;
   }
   .header__logo {
-    -webkit-transform: scale(0.7, 0.7);
-            transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7) translate(1px);
+            transform: scale(0.7, 0.7) translate(1px);
   }
 }
 
@@ -5496,6 +5498,10 @@ a {
   }
 }
 
+.program-course .teacher .teacher-card .teacher-name {
+  font-weight: 700;
+}
+
 @media screen and (max-width: 600px) {
   .carousel.card-holder-1 .owl-prev {
     left: 7.5%;
@@ -5830,6 +5836,30 @@ a {
 }
 
 @media screen and (max-width: 425px) {
+  .program-course .teacher .teacher-card .button-start {
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid #bf13fc;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 24px;
+  }
+  .program-course .teacher .teacher-card .teacher-name {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .program-course .teacher .teacher-card ul {
+    padding: 0px 10px;
+  }
+  .program-course .teacher .teacher-card ul li {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .program-course .teacher .teacher-card ul li b {
+    font-size: 15px;
+  }
   .tarifs .card-holder.card-holder-2 .card-item {
     width: 360px;
   }
@@ -5931,14 +5961,19 @@ a {
     width: 50px;
     margin-right: 10px;
   }
-  .program-course .teacher .teacher-card ul {
-    padding: 0 25px;
-  }
   .program-course .teacher .teacher-card li {
     font-size: 15px;
   }
   .program-course .teacher .teacher-card li b {
     font-size: 15px;
+  }
+  .program-course .teacher .teacher-card li:before {
+    position: absolute;
+    content: "·";
+    font-size: 20px;
+    line-height: 14px;
+    top: 0;
+    left: 0;
   }
   .program-course .payment .button-start {
     border: 1px solid #000000;
