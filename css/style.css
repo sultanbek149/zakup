@@ -4679,6 +4679,9 @@ a {
 }
 
 @media only screen and (max-width: 1024px) {
+  .tarifs .tarif-type-title {
+    margin-bottom: 50px;
+  }
   .tarifs .tarif-type-title.tarif-type-title-1 {
     margin-bottom: 50px;
   }
@@ -4693,7 +4696,7 @@ a {
     height: 10px;
     margin: 0 5px;
     border-radius: 50%;
-    border: 1px solid #FFFFFF !important;
+    border: 1px solid #ffffff !important;
   }
   .carousel .owl-dots {
     text-align: center;
@@ -4704,25 +4707,29 @@ a {
     margin-top: 20px;
   }
   .carousel .owl-dot.active {
-    background-color: #FFFFFF !important;
+    background-color: #ffffff !important;
   }
   .carousel.card-holder-2 {
     margin-bottom: 100px;
   }
-  .carousel.card-holder-1, .carousel.card-holder-2 {
+  .carousel.card-holder-1,
+  .carousel.card-holder-2 {
     padding: 0px 0px;
     gap: 0;
   }
-  .carousel.card-holder-1 .card-item, .carousel.card-holder-2 .card-item {
+  .carousel.card-holder-1 .card-item,
+  .carousel.card-holder-2 .card-item {
     margin: 0 auto;
     margin-top: 60px;
   }
   .carousel.card-holder-1 .owl-next,
-  .carousel.card-holder-1 .owl-prev, .carousel.card-holder-2 .owl-next,
+  .carousel.card-holder-1 .owl-prev,
+  .carousel.card-holder-2 .owl-next,
   .carousel.card-holder-2 .owl-prev {
     position: absolute;
   }
-  .carousel.card-holder-1 .owl-next, .carousel.card-holder-2 .owl-next {
+  .carousel.card-holder-1 .owl-next,
+  .carousel.card-holder-2 .owl-next {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -4732,22 +4739,25 @@ a {
     top: 45%;
     left: 85%;
   }
-  .carousel.card-holder-1 .owl-next i, .carousel.card-holder-2 .owl-next i {
+  .carousel.card-holder-1 .owl-next i,
+  .carousel.card-holder-2 .owl-next i {
     position: relative;
     top: -5px;
     left: 0px;
   }
-  .carousel.card-holder-1 .owl-prev, .carousel.card-holder-2 .owl-prev {
+  .carousel.card-holder-1 .owl-prev,
+  .carousel.card-holder-2 .owl-prev {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    top: 44.7%;
+    top: 45%;
     left: 10%;
     background: linear-gradient(124.73deg, #ff68ff -91.23%, rgba(255, 104, 255, 0) 86.93%) !important;
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
   }
-  .carousel.card-holder-1 .owl-prev i, .carousel.card-holder-2 .owl-prev i {
+  .carousel.card-holder-1 .owl-prev i,
+  .carousel.card-holder-2 .owl-prev i {
     position: relative;
     top: -3px;
     left: 0px;
@@ -5132,6 +5142,10 @@ a {
   .tarifs .card-holder .card-item .discount.discount3 {
     top: 81.5%;
   }
+  .carousel.card-holder-2 .owl-prev {
+    left: unset;
+    right: 85%;
+  }
   .tarifs .card-holder.card-holder-3 ul {
     height: 490px;
   }
@@ -5316,6 +5330,15 @@ a {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .carousel.card-holder-2 .owl-prev {
+    right: 87%;
+  }
+  .carousel.card-holder-2 .owl-next {
+    left: 87%;
+  }
+}
+
 @media screen and (max-width: 545px) {
   .tarifs .card-holder .card-item .discount {
     right: -30px;
@@ -5325,7 +5348,22 @@ a {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .carousel.card-holder-2 .owl-prev {
+    right: 87%;
+  }
+  .carousel.card-holder-2 .owl-next {
+    left: 87%;
+  }
+}
+
 @media screen and (max-width: 519px) {
+  .carousel.card-holder-2 .owl-prev {
+    right: 89%;
+  }
+  .carousel.card-holder-2 .owl-next {
+    left: 89%;
+  }
   .card-holder {
     padding: 0 40px;
   }
@@ -5338,6 +5376,9 @@ a {
 }
 
 @media screen and (max-width: 500px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 410px;
+  }
   .tarifs .card-holder .card-item .discount {
     width: 95.29px;
   }
@@ -5380,6 +5421,15 @@ a {
 }
 
 @media screen and (max-width: 475px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 400px;
+  }
+  .carousel.card-holder-2 .owl-next {
+    left: 88%;
+  }
+  .carousel.card-holder-2 .owl-prev {
+    right: 88%;
+  }
   .carousel.card-holder-1 .owl-next {
     left: 87%;
   }
@@ -5399,7 +5449,20 @@ a {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 380px;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 360px;
+  }
+  .tarifs .card-holder.card-holder-2 ul {
+    height: unset;
+    margin-bottom: 20px;
+  }
   .carousel.card-holder-1 .owl-next {
     left: 87%;
   }
@@ -5612,6 +5675,12 @@ a {
 
 @media screen and (max-width: 425px) {
   .tarifs .card-holder .card-item {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
     width: 335px;
   }
 }
@@ -5620,14 +5689,23 @@ a {
   .tarifs .card-holder .card-item {
     width: 315px;
   }
+  .tarifs .carousel.card-holder-2 .card-item {
+    width: 315px;
+  }
   .card-holder-3 {
     padding: 0 25px;
   }
   .carousel.card-holder-1 .owl-next {
-    left: 90%;
+    left: 87%;
   }
   .carousel.card-holder-1 .owl-prev {
-    left: 0.5%;
+    right: 87%;
+  }
+  .carousel.card-holder-2 .owl-next {
+    left: 87%;
+  }
+  .carousel.card-holder-2 .owl-prev {
+    right: 87%;
   }
 }
 

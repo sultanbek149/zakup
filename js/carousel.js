@@ -7,14 +7,6 @@ $(".carousel").owlCarousel({
     navText: ["<i style='font-size:11px; color: white;' class='fa'>&#xf104;</i>", "<i style='font-size:11px; color: white; transform: rotate(180deg);' class='fa'>&#xf104;</i>"],
     onInitialized: addRemove,
     onTranslated : addRemove,
-    responsive: {
-        0: {
-        },
-        600: {
-        },
-        1000: {
-        }
-    }
 })
 
 
@@ -34,11 +26,18 @@ function addRemove(event) {
         $('.owl-prev').removeClass('disappear')
     }  
 
-    if(item === items) {
-        $('.owl-next').addClass('disappear')
+    if(item === 2) {
+        $('.card-holder-2 .owl-next').addClass('disappear')
     } else {
-        $('.owl-next').removeClass('disappear')
+        $('.card-holder-2 .owl-next').removeClass('disappear')
     }
+
+    if(item === 3) {
+        $('.card-holder-1 .owl-next').addClass('disappear')
+    } else {
+        $('.card-holder-1 .owl-next').removeClass('disappear')
+    }
+    
 }
 
 

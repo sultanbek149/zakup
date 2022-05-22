@@ -1284,6 +1284,10 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
 }
 
 @media only screen and (max-width: 1024px) {
+  .tarifs .tarif-type-title {
+    margin-bottom: 50px;
+  }
+  
   .tarifs .tarif-type-title.tarif-type-title-1 {
     margin-bottom: 50px;
   }
@@ -1296,7 +1300,6 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
     display: none;
   }
 
-
   .carousel .owl-dot {
     width: 10px;
     height: 10px;
@@ -1304,7 +1307,7 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
     margin: 0 5px;
 
     border-radius: 50%;
-    border: 1px solid #FFFFFF !important;
+    border: 1px solid #ffffff !important;
   }
 
   .carousel .owl-dots {
@@ -1318,15 +1321,15 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
   }
 
   .carousel .owl-dot.active {
-    background-color: #FFFFFF !important;
+    background-color: #ffffff !important;
   }
-  
 
   .carousel.card-holder-2 {
     margin-bottom: 100px;
   }
 
-  .carousel.card-holder-1, .carousel.card-holder-2 {
+  .carousel.card-holder-1,
+  .carousel.card-holder-2 {
     padding: 0px 0px;
 
     .card-item {
@@ -1368,7 +1371,7 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
       height: 40px;
       border-radius: 50%;
 
-      top: 44.7%;
+      top: 45%;
       left: 10%;
 
       background: linear-gradient(
@@ -1769,6 +1772,11 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
     top: 81.5%;
   }
 
+  .carousel.card-holder-2 .owl-prev {
+    left: unset;
+    right: 85%;
+  }
+
   .tarifs .card-holder.card-holder-3 ul {
     height: 490px;
   }
@@ -1989,6 +1997,16 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
   }
 }
 
+@media screen and (max-width: 550px) {
+  .carousel.card-holder-2 .owl-prev {
+    right: 87%;
+  }
+
+  .carousel.card-holder-2 .owl-next {
+    left: 87%;
+  }
+}
+
 @media screen and (max-width: 545px) {
   .tarifs .card-holder .card-item .discount {
     right: -30px;
@@ -1999,7 +2017,25 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
   }
 }
 
+@media screen and (max-width: 520px) {
+  .carousel.card-holder-2 .owl-prev {
+    right: 87%;
+  }
+
+  .carousel.card-holder-2 .owl-next {
+    left: 87%;
+  }
+}
+
 @media screen and (max-width: 519px) {
+  .carousel.card-holder-2 .owl-prev {
+    right: 89%;
+  }
+
+  .carousel.card-holder-2 .owl-next {
+    left: 89%;
+  }
+
   .card-holder {
     padding: 0 40px;
   }
@@ -2012,6 +2048,10 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
 }
 
 @media screen and (max-width: 500px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 410px;
+  }
+
   .tarifs .card-holder .card-item .discount {
     width: 95.29px;
   }
@@ -2055,6 +2095,18 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
 }
 
 @media screen and (max-width: 475px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 400px;
+  }
+
+  .carousel.card-holder-2 .owl-next {
+    left: 88%;
+  }
+
+  .carousel.card-holder-2 .owl-prev {
+    right: 88%;
+  }
+
   .carousel.card-holder-1 {
     .owl-next {
       left: 87%;
@@ -2080,7 +2132,22 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
   }
 }
 
+@media screen and (max-width: 450px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 380px;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
+    width: 360px;
+  }
+
+  .tarifs .card-holder.card-holder-2 ul {
+    height: unset;
+    margin-bottom: 20px;
+  }
+
   .carousel.card-holder-1 {
     .owl-next {
       left: 87%;
@@ -2347,6 +2414,12 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
 
 @media screen and (max-width: 425px) {
   .tarifs .card-holder .card-item {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .tarifs .card-holder.card-holder-2 .card-item {
     width: 335px;
   }
 }
@@ -2355,17 +2428,32 @@ $small-orange-circle: url("../src/images/small-orange-circle.svg");
   .tarifs .card-holder .card-item {
     width: 315px;
   }
+
+  .tarifs .carousel.card-holder-2 .card-item {
+    width: 315px;
+  }
+
   .card-holder-3 {
     padding: 0 25px;
   }
 
   .carousel.card-holder-1 {
     .owl-next {
-      left: 90%;
+      left: 87%;
     }
 
     .owl-prev {
-      left: 0.5%;
+      right: 87%;
+    }
+  }
+
+  .carousel.card-holder-2 {
+    .owl-next {
+      left: 87%;
+    }
+
+    .owl-prev {
+      right: 87%;
     }
   }
 }
