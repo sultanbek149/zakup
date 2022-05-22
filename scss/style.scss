@@ -544,6 +544,7 @@
   }
 
   .course-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -556,7 +557,31 @@
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+
+    z-index: 0;
+    & > *{
+      z-index: 2
+    }
   }
+
+  img.zakup-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -80%);
+    z-index: 1;
+  }
+
+  .sk-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -65%);
+    z-index: 1;
+  }
+
 
   .course-title {
     color: #fff;
