@@ -67,7 +67,7 @@
         </nav>
 
 
-        <header class="header m-auto d-flex align-center mt-50">
+        <header class="header m-auto d-flex align-center">
             <div class="logo header__logo d-flex align-center">
                 <img src="src/images/logo.svg" alt="logo" class="mr-10">
                 VSE<b>ZAKUPKI</b>
@@ -85,6 +85,18 @@
 
         <main class="main m-auto">
 
+            
+
+        <div class="bg-images">
+            <img class="bg-img bg-img1" src="src/images/purple-circle.svg" alt="">
+            <img class="bg-img bg-img2" src="src/images/empty-triangle.svg" alt="">
+            <img class="bg-img bg-img3" src="src/images/orange-circle.svg" alt="">
+            <img class="bg-img bg-img4" src="src/images/orange-triangle.svg" alt="">
+            <img class="bg-img bg-img5" src="/src/images/small-orange-circle.svg" alt="">
+            <img class="bg-img bg-img6" src="src/images/two-stars.svg" alt="">
+            <img class="bg-img bg-img7" src="src/images/purple-circle2.svg" alt="">
+        </div>
+
             <div class="whatsapp">
                 <div style="position: relative;">
                     <div class="parent">
@@ -101,6 +113,7 @@
                 </div>
             </div>
 
+            
             <section class="banner">
                 <div class="banner-text">
                     <h1>
@@ -113,7 +126,7 @@
 
                     <div class="banner-discount">
                         <p> <span class="text-purple">-20% СКИДКА</span> закончится через</p>
-                        <p class="banner-timer">14:23:59:00</p>
+                        <p class="banner-timer" id="timer">14:23:59:00</p>
                     </div>
 
                     <button class="button-start">
@@ -147,13 +160,14 @@
 
                 <div class="text-center">
                     <button class="button-start">Заполнить заявку</button>
+                    <button class="button-start mobile">Оставить заявку</button>
                 </div>
 
             </section>
 
 
             <section class="course-people">
-                <h3>ДЛЯ КОГО ПРЕДНАЗНАЧЕН КУРС?</h3>
+                <h3>ДЛЯ <span class="mobile">КОГО</span> ПРЕДНАЗНАЧЕН КУРС?</h3>
 
                 <div class="people-holder">
                     <div class="people-item">
@@ -227,15 +241,18 @@
 
             <section class="info-course">
 
-
-
                 <div class="img text-center">
                     <img src="src/images/brain.svg" alt="">
+                    <img class="mobile" src="src/images/brain-mobile.svg" alt="">
                 </div>
 
                 <div class="text-center">
                     <button class="button-start">
                         Получить ответы
+                    </button>
+
+                    <button class="button-start mobile">
+                        Начать обучение
                     </button>
                 </div>
             </section>
@@ -1377,6 +1394,8 @@
     <script src="./js/sendEmail.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="./js/timer.js"></script>
+
 
     <!-- Sending Email -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
