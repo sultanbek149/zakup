@@ -1106,6 +1106,11 @@
     font-weight: 900;
     font-size: 50px;
     text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .p-title {
+    font-size: 25px;
   }
 
   input {
@@ -1270,6 +1275,13 @@
     justify-content: space-around;
   }
 
+  .tarifs .card-holder.card-holder-2 .card-item .discount {
+    top: 64%;
+    right: -30px;
+    font-size: 20px;
+    width: 90.29px;
+    height: 50.95px;
+  }
   .tarifs .card-holder-1 .card-item .discount {
     right: -20px;
     font-size: 26px;
@@ -1378,6 +1390,14 @@
     flex-wrap: wrap;
   }
 
+  .card-holder.card-holder-2 {
+    padding: 0px 50px;
+    gap: 50px;
+
+    justify-content: center;
+  }
+  
+
   .header__logo {
     margin-right: 50px;
   }
@@ -1480,7 +1500,7 @@
 
   .tarifs .card-holder.card-holder-1 .card-item .img-holder-1 {
     -webkit-transform: scale(0.8, 0.8) translate(-75px);
-    transform: scale(0.9, 0.9) translate(-75px);
+    transform: scale(0.9, 0.9) translate(-62px);
   }
 
   .tarifs .card-holder .card-item li,
@@ -1888,7 +1908,27 @@
   display: none;
 }
 
+.form-button.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .form-registration {
+    .form-title {
+      font-size: 38px;
+    }
+
+    .p-title {
+      font-size: 21px;
+    }
+  }
+  .form-button:not(.mobile) {
+    display: none;
+  }
+
+  .form-button.mobile {
+    display: inline;
+  }
   .card-holder-2 .tarif-type-title.mobile.mobile-1 {
     margin-bottom: 0px;
   }
