@@ -760,33 +760,30 @@
 
     .payment-title {
       font-weight: 800;
-      font-size: 55px;
+      font-size: 50px;
       text-align: center;
-
       color: #000000;
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
 
     .payment-desc {
       font-weight: 400;
-      font-size: 35px;
-      /* identical to box height */
-
+      font-size: 30px;
       text-align: center;
-
       color: #000000;
-
-      margin-bottom: 35px;
+      margin-bottom: 31px;
     }
 
     .payment-item {
+      border-radius: 24px;
+      padding: 30px;
+      margin-bottom: 30px;
+
       max-width: 700px;
       width: 100%;
 
       margin: 0 auto;
       border: 2px solid #000000;
-      border-radius: 30px;
-      padding: 30px;
 
       display: flex;
       align-items: center;
@@ -802,8 +799,7 @@
 
         color: #000000;
       }
-
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
     .button-start {
@@ -811,6 +807,7 @@
       border: 2px solid #000000;
       background: transparent;
       margin-bottom: 25px;
+      font-weight: 600;
     }
 
     .payment-text {
@@ -2072,14 +2069,8 @@
     font-size: 22px;
     text-align: center;
 
-    color: #000000;
-
     max-width: 320px;
     height: 62px;
-    left: 55px;
-    top: 8726px;
-
-    border: 1px solid #000000 !important;
     border-radius: 100px;
     line-height: 60px;
   }
@@ -2504,7 +2495,7 @@
     padding-right: 20px;
   }
   .program-course .payment .payment-item {
-    width: 90%;
+    width: 95%;
   }
 
   .diagonal-box {
@@ -2908,7 +2899,6 @@
     margin-bottom: 15px;
   }
 
-  
   .program-course .button-start {
     font-weight: 600;
     font-size: 20px;
@@ -3099,14 +3089,12 @@
   }
 
   .program-course .payment .text-center {
-    margin-top: 40px !important; 
+    margin-top: 40px !important;
   }
 
   .program-course .payment .payment-text {
     font-size: 11px;
   }
-
-
 
   .program-course .payment .payment-item p {
     font-size: 15px;
@@ -3118,7 +3106,7 @@
   }
 
   .program-course .payment .payment-item {
-    border-radius: 19px;
+    border-radius: 15px;
 
     border: 1px solid #000000;
     padding: 20px;
