@@ -2163,6 +2163,11 @@ button.form-button {
 }
 
 @media screen and (max-width: 768px) {
+  .alert-message {
+    top: -10%;
+    font-size: 15px;
+  }
+
   .thunder {
     display: none;
   }
