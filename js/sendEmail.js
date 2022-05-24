@@ -19,7 +19,7 @@ function sendMail(e) {
         Subject: "SnowLeopard Feedback contacts",
         Body: `Имя:             ${fullName}.<br>
                Номер телефона:  ${pNumber}.`
-    }).then(showAlert('Ваше сообщение отправлено успешно'));
+    }).then(showAlert('Ваше сообщение отправлено успешно!'));
     
     // sultanhahahamaratov@gmail.com
     // password 80AC4DD439A67D3C6CDC2F9DB585070706C3
