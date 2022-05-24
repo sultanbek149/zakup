@@ -97,6 +97,13 @@
   display: none;
 }
 
+a.button-start {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
 .button-start {
   display: inline-block;
   max-width: 270px;
@@ -435,7 +442,8 @@
   padding: 70px 150px 130px;
   background: linear-gradient(89.61deg, #bf13fc -36.23%, #000000 112.62%);
 
-  .h3-result {
+  .h3-result,
+  .h3-result > span {
     text-align: center;
 
     font-style: italic;
@@ -445,6 +453,16 @@
     color: #ffffff;
 
     margin-bottom: 50px;
+  }
+
+  .h3-result {
+    .desktop-h {
+      background-image: url("../src/images/desktop-h.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 160%;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
   }
 
   .grid-holder {
@@ -647,14 +665,14 @@
   }
 
   .button-start {
-    line-height: 70px;
+    line-height: 59px;
     background: #ffffff;
     color: #6a25d7;
     margin-bottom: 35px;
     font-weight: 800;
     font-size: 23px;
-    max-width: 376px;
-    height: 75px;
+    max-width: 294px;
+    height: 60px;
   }
 
   .teacher {
@@ -747,6 +765,7 @@
         border: 1px solid #bf13fc;
         font-size: 22px;
         height: 60px;
+        line-height: 56px;
       }
     }
 
@@ -808,6 +827,7 @@
       background: transparent;
       margin-bottom: 25px;
       font-weight: 600;
+      line-height: 53px;
     }
 
     .payment-text {
@@ -853,9 +873,11 @@
   .eto-info-holder {
   }
   .eto-info-item {
-    img,
+    img {
+      margin-bottom: 10px;
+    }
     .eto-word {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
   }
 
@@ -863,9 +885,14 @@
   }
 
   .eto-word {
-    color: linear-gradient(180deg, #acacac 0%, #000000 100%);
-    font-weight: 900;
     font-size: 28px;
+
+    font-weight: 900;
+    background: linear-gradient(180deg, #acacac 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
   .button-start {
@@ -1092,6 +1119,10 @@
     color: #000000;
 
     padding-bottom: 10px;
+
+    &.mobile {
+      display: none;
+    }
   }
 
   .card-holder.card-holder-2 {
@@ -1114,6 +1145,7 @@
 
     .red-diagonal {
       position: relative;
+      display: inline-block;
 
       &:before {
         position: absolute;
@@ -1433,7 +1465,11 @@
     padding: 0 50px;
     gap: 80px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+
+    .eto-info-item {
+      width: 365px;
+    }
   }
 }
 
@@ -1535,6 +1571,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .h3-result {
+    .desktop-h {
+      display: inline-block;
+    }
+  }
+
   .form-registration .form-container .form-group {
     transform: scale(0.9, 0.9);
   }
@@ -1779,10 +1821,6 @@
     justify-content: space-between;
     padding: 0 50px;
     margin-bottom: 30px;
-  }
-
-  .eto-info-holder {
-    flex-direction: column;
   }
 
   .banner,
@@ -2048,6 +2086,21 @@
 }
 
 @media screen and (max-width: 768px) {
+  .result .h3-result {
+    .desktop-h {
+      background-image: none;
+    }
+
+    .mobile-h {
+      display: inline-block;
+      background-image: url("../src/images/mobile-h.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 150%;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
+  }
+
   .program-course .payment .payment-item {
     border: 2px solid #000000;
     border-radius: 15px;
@@ -2298,13 +2351,12 @@
   .course-people span.mobile {
     background-image: url("../src/images/mobile-underline.svg");
     background-repeat: no-repeat;
-    background-size: 133% 140%;
-
+    background-size: 100% 140%;
     padding-bottom: 20px;
   }
 
   .course-people h3 {
-    line-height: 45px;
+    line-height: 55px;
   }
 
   .switch-form .button-start.mobile {
@@ -2344,6 +2396,10 @@
     text-align: center;
 
     color: #710199;
+  }
+
+  .tarifs .h5-title.mobile {
+    display: block;
   }
 
   .card-holder-3 .tarif-type-title.mobile.mobile-1 {
@@ -2642,13 +2698,13 @@
   }
 
   .switch-form h3 {
-    font-size: 34px;
-    padding: 0px 29px;
+    font-size: 25px;
+    padding: 0px 30px;
   }
 
   .switch-form .title-desc {
     font-size: 15px;
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
 
   .banner-under {
@@ -2688,9 +2744,11 @@
     font-style: normal;
     font-weight: 900;
 
-    font-size: 30px;
+    font-size: 25px;
+
+    line-height: 40px;
     span {
-      font-size: 30px;
+      font-size: 25px;
     }
     margin-bottom: 50px;
   }
@@ -2783,9 +2841,11 @@
   }
 
   .course-people h3 {
+    line-height: 35px;
     font-size: 25px;
-    span {
+    span.mobile {
       font-size: 25px;
+      background-size: 100% 125%;
     }
   }
 
@@ -2895,27 +2955,150 @@
 }
 
 @media screen and (max-width: 425px) {
+  .result .button-start {
+    max-width: 274px;
+    font-size: 20px;
+    line-height: 58px;
+    height: 65px;
+  }
+
+  .info-course .button-start.mobile {
+    display: inline-block;
+    margin-bottom: 70px;
+  }
+
+  .eto-info-holder {
+    .eto-info-item {
+      img {
+        margin-bottom: 0px;
+      }
+      .eto-word {
+        margin-bottom: 15px;
+
+        font-size: 30px;
+        line-height: 37px;
+        /* identical to box height */
+      }
+    }
+  }
+
+  .footer .logo {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .footer {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-top: 70px;
+
+    .logo {
+      img {
+        width: 25px;
+      }
+      b {
+        font-size: 15px !important;
+      }
+    }
+
+    .footer-socials {
+      .d-flex:not(:first-child) {
+        img {
+          width: 20px;
+        }
+      }
+
+      .d-flex:first-child {
+        img {
+          width: 34px;
+          left: -6px;
+        }
+      }
+
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
   .program-course .payment .payment-item {
     margin-bottom: 15px;
   }
 
+  .program-course {
+    .course-holder {
+      gap: 40px;
+    }
+    .course-item {
+      padding: 25px 30px 10px;
+    }
+
+    img.zakup-img {
+      top: 62%;
+      width: 82%;
+    }
+
+    .sk-img {
+      position: absolute;
+      top: 51%;
+    }
+
+    .course-desc {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 17px;
+      font-size: 12px;
+    }
+
+    .course-title {
+      margin-bottom: 5px;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 21px;
+    }
+
+    .step-first {
+      .step-number {
+        font-size: 15px !important;
+      }
+    }
+    .step {
+      margin-bottom: 6px;
+      .step-number {
+        width: 15px;
+        font-size: 20px;
+      }
+      .step-desc {
+        line-height: 15px;
+      }
+    }
+  }
+
   .program-course .button-start {
-    font-weight: 600;
     font-size: 20px;
     height: 59px;
     line-height: 56px;
+
+    font-weight: 800;
+    font-size: 20px;
+
+    color: #7a00a5;
   }
 
   .form-registration .form-button {
-    height: 54px !important;
-    line-height: 53px;
-    width: 90%;
-    transform: unset;
-    font-size: 22px;
+    height: 50px !important;
+    line-height: 49px;
+    width: 76%;
+    font-size: 20px;
   }
   .form-registration .form-container .bt-line {
     top: 50%;
     width: 89%;
+  }
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+  .footer-address {
+    font-size: 12px;
+    margin-bottom: 60px;
   }
 
   .form-registration .form-container .input-t {
@@ -3066,12 +3249,15 @@
   }
 
   .whatsapp {
-    right: 0px;
-    bottom: 0px;
+    right: 5px;
+    bottom: 18px;
   }
 
   .result .h3-result {
     font-size: 30px;
+    span {
+      font-size: 30px;
+    }
   }
 
   .result .grid-holder {
@@ -3203,6 +3389,9 @@
 
   .h3-result {
     font-size: 30px;
+    span {
+      font-size: 30px;
+    }
   }
 
   .header__logo {
@@ -3221,6 +3410,13 @@
   .banner .button-start,
   .switch-form .button-start {
     max-width: 320px;
+  }
+
+  .switch-form .button-start.mobile {
+    max-width: 265px;
+    height: 53px;
+    line-height: 51px;
+    font-size: 20px;
   }
 
   .banner .button-start {
