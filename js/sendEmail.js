@@ -12,16 +12,15 @@ function sendMail(e) {
     const pNumber = document.getElementById('pNumber').value;
 
 
-    // Email.send({
-    //     SecureToken: "74c06a47-6f01-4dd8-a8e3-8d5c5d81847f",
-    //     To: 'allaniyazovsultan1@gmail.com',
-    //     From: 'sultanhahahamaratov@gmail.com',
-    //     Subject: "SnowLeopard Feedback contacts",
-    //     Body: `Name:              ${fullName}.<br>
-    //            Phone number:  ${pNumber}.`
-    // }).then(showAlert("Сообщение отправлено!"));
-    showAlert('Ваше сообщение отправлено успешно!')
-
+    Email.send({
+        SecureToken: "74c06a47-6f01-4dd8-a8e3-8d5c5d81847f",
+        To: 'kursi@vsezakupki.kz',
+        From: 'sultanhahahamaratov@gmail.com',
+        Subject: "SnowLeopard Feedback contacts",
+        Body: `Имя:             ${fullName}.<br>
+               Номер телефона:  ${pNumber}.`
+    }).then(showAlert('Ваше сообщение отправлено успешно'));
+    
     // sultanhahahamaratov@gmail.com
     // password 80AC4DD439A67D3C6CDC2F9DB585070706C3
 
@@ -43,4 +42,5 @@ function showAlert(message) {
 function clearFields() {
     document.querySelector('#pNumber').value = '';
     document.querySelector('#fname').value = '';
+    document.querySelector('#fCheck').checked = false;
 }
