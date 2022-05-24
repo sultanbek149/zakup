@@ -6,7 +6,7 @@ $sides: (
 );
 
 @each $side, $letter in $sides {
-  @for $px from 1 through 50 {
+  @for $px from 1 through 10 {
     .m#{$letter}-#{$px * 5} {
       margin-#{$side}: #{$px * 5}px !important;
     }
