@@ -1067,12 +1067,15 @@ a {
 
 a.button-start,
 button.form-button {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
   -webkit-user-select: none;
-  /* Chrome all / Safari all */
+  /* Safari */
+  /* Konqueror HTML */
   -moz-user-select: none;
-  /* Firefox all */
+  /* Old versions of Firefox */
   -ms-user-select: none;
-  /* IE 10+ */
+  /* Internet Explorer/Edge */
   user-select: none;
 }
 
