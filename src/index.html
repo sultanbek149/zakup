@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSEZAKUPKI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a199b00d11.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="assets/scss/style.scss">
+</head>
+
+<body>
+    <div class="wrapper m-auto">
+        <nav class="navbar">
+            <div class="nav-holder">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tarifs" class="nav-link">Тарифы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tel:+77015557015" class="nav-link">+7 (701) 555 70-15</a>
+                        <i style="font-size:11px; color: white;" class="fa">&#xf104;</i>
+
+                    </li>
+                </ul>
+                <img src="assets/images/cancel.png" alt="cancel" class="cross">
+            </div>
+
+        </nav>
+
+
+        <header class="header m-auto d-flex align-center">
+            <div class="logo header__logo d-flex align-center">
+                <img src="assets/images/logo.svg" alt="logo" class="mr-10">
+                VSE<b>ZAKUPKI</b>
+            </div>
+            <img src="assets/images/pause.svg" class="img-c mr-50 ml-50" alt="center-image" width="200" height="170">
+            <div class="header__right d-flex align-center justify-between w100p">
+                <a href="#top"><b>Главная</b>
+                </a>
+                <a href="#about">О нас</a>
+                <a href="#tarifs">Тарифы</a>
+                <a href="tel:+77015557015" class="input-tel">+7 (701) 555 70-15</a>
+                <img id="ham-img" src="assets/images/hamburger.svg" alt="hambuger">
+            </div>
+        </header>
+
+        <main class="main m-auto">
+
+
+
+            <div class="bg-images">
+                <img class="bg-img bg-img1" src="assets/images/purple-circle.svg" alt="bg1">
+                <img class="bg-img bg-img2" src="assets/images/empty-triangle.svg" alt="bg2">
+                <img class="bg-img bg-img3" src="assets/images/orange-circle.svg" alt="bg3">
+                <img class="bg-img bg-img4" src="assets/images/orange-triangle.svg" alt="bg4">
+                <img class="bg-img bg-img5" src="/assets/images/small-orange-circle.svg" alt="bg5">
+                <img class="bg-img bg-img6" src="assets/images/two-stars.svg" alt="bg6">
+                <img class="bg-img bg-img7" src="assets/images/purple-circle2.svg" alt="bg7">
+            </div>
+
+            <div class="pulse">
+                <a href="https://api.whatsapp.com/send?phone=77015557015">
+                    <img src="./assets/images/wp.svg" alt="wp">
+                </a>
+            </div>
+
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>
+                        Стань специалистом по тендерам уже через 2 недели практического обучения
+                    </h1>
+
+                    <h2>
+                        Онлайн курс для <b>поставщиков</b>
+                    </h2>
+
+                    <!-- <div class="banner-discount">
+                        <p> <span class="text-purple">-20% СКИДКА</span> закончится через</p>
+                        <p class="banner-timer" id="timer">14:23:59:00</p>
+                    </div> -->
+
+                    <a class="button-start" href="#form-reg">
+                        Начать зарабатывать
+                    </a>
+                </div>
+                <div class="banner-image">
+                    <img src="assets/images/banner-image.png" alt="BannerImg">
+                </div>
+            </section>
+
+            <div class="banner-under">
+                <img class="banner-mobile" src="assets/images/banner-under.png" alt="banner_under">
+                <img class="banner-desktop" src="assets/images/banner-desktop.png" alt="banner-desktopf">
+            </div>
+
+
+            <section class="switch-form">
+                <h3 class="h3-swithc-form">
+                    Заполни заявку прямо сейчас
+                </h3>
+
+                <p class="title-desc">
+                    и получи доступ к предобучению состоящий из 11 уроков совершенно бесплатно!
+                </p>
+
+                <div class="img img-background">
+                    <img class="gift-desktop" src="assets/images/gift.svg" alt="gift">
+                    <img class="gift-mobile" src="assets/images/gift-mobile.svg" alt="gm">
+                </div>
+
+                <div class="text-center">
+                    <a href="#form-reg" class="button-start">Заполнить заявку</a>
+                    <a href="#form-reg" class="button-start mobile">Оставить заявку</a>
+                </div>
+
+            </section>
+
+
+            <section class="course-people">
+                <h3>ДЛЯ <span class="mobile">КОГО</span> ПРЕДНАЗНАЧЕН КУРС?</h3>
+
+                <div class="people-holder">
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="assets/images/image12.svg" alt="img12">
+                        </div>
+
+                        <p class="item-title">
+                            НОВИЧОК
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь освоить востребованную специальность и получать высокий заработок
+                        </p>
+                    </div>
+
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="assets/images/image13.svg" alt="img13">
+                        </div>
+
+                        <p class="item-title">
+                            СПЕЦИАЛИСТ В ОБЛАСТИ ЗАКУПОК
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь повысить квалификацию и быть в курсе всех изменений
+                        </p>
+                    </div>
+
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="assets/images/image14.svg" alt="img14">
+                        </div>
+
+                        <p class="item-title">
+                            ПРЕДПРИНИМАТЕЛЬ
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь открыть ИП и работать на себя, выигрывая тендеры
+                        </p>
+                    </div>
+
+                    <div class="people-item">
+                        <div class="img-holder">
+                            <img src="assets/images/image15.svg" alt="img15">
+                        </div>
+
+                        <p class="item-title">
+                            БИЗНЕСМЕН
+                        </p>
+
+                        <p class="item-desc">
+                            Хочешь расширить рынок продаж своих товаров, работ или услуг
+                        </p>
+                    </div>
+                </div>
+
+                <div class="thunder-holder text-center">
+                    <a href="#form-reg" class="button-start">
+                        Пройти обучение
+                    </a>
+                    <img src="./assets/images/thunder.svg" alt="th" class="thunder">
+                </div>
+
+            </section>
+
+            <div class="diagonal-box">
+                ЧТО ТЫ УЗНАЕШЬ В ЭТОМ КУРСЕ?
+            </div>
+
+            <section class="info-course">
+
+                <div class="img text-center">
+                    <img src="assets/images/brain.svg" alt="brain">
+                    <img class="mobile" src="assets/images/brain-mobile.svg" alt="brm">
+                </div>
+
+                <div class="text-center">
+                    <a href="#form-reg" class="button-start">
+                        Получить ответы
+                    </a>
+
+                    <a href="#form-reg"class="button-start mobile">
+                        Начать обучение
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="result">
+                <h3 class="h3-result">ЧТО ТЫ <span class="mobile-h">ПОЛУЧИШЬ</span> <span class="desktop-h">ПО ИТОГУ?</span></h3>
+
+                <div class="grid-holder d-flex">
+                    <div class="grid-item">
+                        <span class="number">1</span>
+                        <p><b>18 летний</b> опыт в одном курсе</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <span class="number">2</span>
+                        <p>доступ из <b>любой точки мира</b></p>
+                    </div>
+
+                    <div class="grid-item">
+                        <span class="number">3</span>
+                        <p><b>прямая связь с куратором</b> в чате</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <span class="number">4</span>
+                        <p>тех. поддержка</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <span class="number">5</span>
+                        <p><b>закрытая группа</b> выпускников <b>“VSEZAKUPKI”</b></p>
+                    </div>
+
+                    <div class="grid-item">
+                        <span class="number">6</span>
+                        <p>сопровождение от эксперта по актуальным изменениям</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <span class="number">7</span>
+                        <p><b>юридическая и бухгалтерская</b> информподдержка</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#form-reg" class="button-start">
+                        Начать обучение
+                    </a>
+                    <a href="#form-reg" class="button-start mobile">
+                        Пройти обучение
+                    </a>
+                </div>
+            </section>
+
+            <section class="program-course">
+                <h3 class="program-title">ПРОГРАММА ОБУЧЕНИЯ</h3>
+
+                <div class="course-holder">
+                    <div class="course-item">
+                        <img src="assets/images/zakup-card.svg" alt="zc" class="zakup-img">
+
+                        <p class="course-title">
+                            ГОСУДАРСТВЕННЫЕ ЗАКУПКИ
+                        </p>
+                        <p class="course-desc">Goszakup.gov.kz</p>
+
+
+                        <div class="course-steps">
+                            <div class="step step-first">
+                                <div class="step-number">0.1</div>
+                                <div class="step-desc">
+                                    Предобучение
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">0</div>
+                                <div class="step-desc">
+                                    Вводный
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number step-number-1">1</div>
+                                <div class="step-desc">
+                                    Работа заказчика
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-desc">
+                                    Способ закупки “Из одного источника”
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-desc">Способ закупки “Запрос ценовых предложений”
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-desc">Способ закупки “Электронный магазин”
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">5</div>
+                                <div class="step-desc">Способ закупки “Конкурс”
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">6</div>
+                                <div class="step-desc">
+                                    Способ закупки “Аукцион”
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">7</div>
+                                <div class="step-desc">
+                                    Договор
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#form-reg" class="button-start">Начать обучение</a>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <img src="assets/images/sk-card.svg" alt="sk" class="sk-img">
+
+                        <p class="course-title">
+                            ЗАКУПКИ АО ФНБ САМРУК КАЗЫНА
+                        </p>
+                        <p class="course-desc">zakup.sk.kz</p>
+
+
+                        <div class="course-steps">
+                            <div class="step step-first d-flex">
+                                <div class="step-number">0.1</div>
+                                <div class="step-desc">
+                                    Предобучение
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number">0</div>
+                                <div class="step-desc">
+                                    Вводный
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number step-number-1">1</div>
+                                <div class="step-desc">
+                                    Работа заказчика
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number">2</div>
+                                <div class="step-desc">
+                                    Способ закупки “Из одного источника”
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number">3</div>
+                                <div class="step-desc">Способ закупки “Запрос ценовых предложений”
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number">4</div>
+                                <div class="step-desc">Способ закупки “Электронный магазин”
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number">5</div>
+                                <div class="step-desc">Способ закупки “Тендер”
+                                </div>
+                            </div>
+                            <div class="step d-flex">
+                                <div class="step-number">6</div>
+                                <div class="step-desc">
+                                    Договор
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#form-reg" class="button-start">Начать обучение</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vse-zakupki-eto" id="about">
+                    <img src="assets/images/logo.svg" alt="logo">
+                    <p class="eto-title">VSE ZAKUPKI</p>
+                    <p class="eto">это:</p>
+
+                    <div class="eto-info-holder d-flex justify-between">
+                        <div class="eto-info-item">
+                            <img src="assets/images/18.svg" alt="img18">
+                            <p class="eto-word">лет</p>
+                            <p class="eto-info-desk">в сфере закупок</p>
+                        </div>
+                        <div class="eto-info-item">
+                            <img src="assets/images/4.500+.svg" alt="img4500">
+                            <p class="eto-word">семинаров</p>
+                            <p class="eto-info-desk">проведено с <b>2010 г.</b></p>
+                        </div>
+                        <div class="eto-info-item">
+                            <img src="assets/images/7.000+.svg" alt="img7000">
+                            <p class="eto-word">специалистов</p>
+                            <p class="eto-info-desk">обучено и доведены до результата</p>
+                        </div>
+                        <div class="eto-info-item">
+                            <img src="assets/images/97.svg" alt="img97">
+                            <p class="eto-word">вебинаров в год</p>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center">
+                        <a href="#form-reg" class="button-start">
+                            Начать обучение
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="teacher">
+                    <h3 class="teacher-title">
+                        <b>КТО</b> ВЕДЕТ УРОКИ?
+                    </h3>
+
+                    <div class="teacher-card">
+                        <div class="teacher-img">
+                            <img src="assets/images/teacher.svg" alt="th" width="300" height="300">
+                        </div>
+
+                        <p class="teacher-name">Романова (Худайбергенова) Наталья Александрова</p>
+
+                        <ul>
+                            <li>
+                                <b>18 лет</b> в сфере закупок
+                            </li>
+                            <li>
+                                С <b>2010 г.</b> проведено <b>4.500 семинаров</b>
+                            </li>
+                            <li>
+                                Обучено более <b>7.000</b> специалистов
+                            </li>
+                            <li>
+                                Действующий <b>практик</b>
+                            </li>
+                            <li>
+                                Эксперт системы <b>ПАРАГРАФ</b>
+                            </li>
+                            <li>
+                                Проведение вебинаров <b>республиканского значения</b> на <b>ПРАВМЕДИА</b>
+                            </li>
+                        </ul>
+
+
+                        <div class="text-center"><a href="#form-reg" class="button-start">Начать обучение</a></div>
+                    </div>
+                </div>
+
+                <div class="payment">
+                    <h3 class="payment-title">
+                        Начни обучение сейчас, а плати потом
+                    </h3>
+
+                    <p class="payment-desc">
+                        Рассрочка до 12 месяцев
+                    </p>
+
+
+                    <div class="payment-item">
+                        <img src="assets/images/percentage.svg" alt="perc"></img>
+                        <p>без процентов и переплат</p>
+                    </div>
+
+                    <div class="payment-item">
+                        <img src="assets/images/clock.svg" alt="clock">
+                        <p>оформление за 5 минут</p>
+                    </div>
+
+                    <div class="payment-item">
+                        <img src="assets/images/puzzle.svg" alt="puzzle">
+                        <p>погашение частями</p>
+                    </div>
+
+
+                    <div class="text-center" style="margin-top: 60px;">
+                        <a class="button-start" href="#form-reg">
+                            Начать обучение
+                        </a>
+                    </div>
+
+                    <p class="payment-text">при оплате в рассрочку СКИДКА не рассмотрена</p>
+                </div>
+
+            </section>
+
+            <section class="tarifs bg-purple" id="tarifs">
+                <h3 class="h3-title text-center">ТАРИФЫ</h3>
+
+                <div class="carousel owl-carousel card-holder card-holder-1 justify-between">
+                    <div class="card-item">
+                        <div class="img-holder-1">
+                            <img src="assets/images/goszakup.svg" alt="holder">
+                        </div>
+                        <h4 class="h4-title mobile text-center">“Государственные закупки”</h4>
+                        <ul>
+                            <li>
+                                ОБУЧЕНИЕ С нуля НА ПЛОЩАДКЕ <b>Государственных Закупок</b>
+                            </li>
+                            <li>
+                                ДОСТУП К СПЕЦИАЛЬНОЙ <b>платформе</b> ДЛЯ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>60</b> УРОКОВ + ПРЕДОБУЧЕНИЕ
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>РАЗДАТОЧНЫЙ МАТЕРИАЛ</b>
+                            </li>
+                            <li>
+                                <b>ТЕСТЫ</b> НА ПРОВЕРКУ ЗНАНИЙ ПОСЛЕ КАЖДОГО УРОКА
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>СЕРТИФИКАТ</b> О ПРОХОЖДЕНИИ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К <b>БАЗЕ ДАННЫХ</b> (АКТУАЛЬНЫЕ НОРМАТИВНЫЕ АКТЫ,
+                                ПРАКТИЧЕСКИЙ МАТЕРИАЛ ОТ ЭКСПЕРТА И ЗАПИСЬ ВЕБИНАРОВ)
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ОБЩИЙ</b> ЧАТ
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ЗАКРЫТЫЙ</b> ЧАТ С КУРАТОРАМИ
+                            </li>
+                            <li>
+                                ОБЩАЯ ВСТРЕЧА С ЭКСПЕРТОМ <b>В ZOOM «ВОПРОС-ОТВЕТ»</b> ПО АКТУАЛЬНЫМ ИЗМЕНЕНИЯМ 2 РАЗА В
+                                МЕСЯЦ В ПЕРИОД ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>ПОДДЕРЖКА</b> ОТ КУРАТОРОВ
+                            </li>
+                            <li>
+                                ДОСТУП К ОБУЧАЮЩЕМУ МАТЕРИАЛУ <b>6 МЕСЯЦЕВ</b> С МОМЕНТА ОПЛАТЫ
+                            </li>
+                        </ul>
+
+                        <p class="price-big text-center">196.000₸</p>
+
+                        <div class="text-center b"><a class="button-start" href="#form-reg">Начать обучение</a></div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-holder-1">
+                            <img src="assets/images/samruk.svg" alt="holder">
+                        </div>
+
+                        <h4 class="h4-title mobile text-center">“Закупки АО ФНБ САМРУК-КАЗЫНА”</h4>
+
+                        <ul>
+                            <li>
+                                ОБУЧЕНИЕ С нуля НА ПЛОЩАДКЕ <b class="cap">АО ФНБ "САМРУК КАЗЫНА"</b>
+                            </li>
+                            <li>
+                                ДОСТУП К СПЕЦИАЛЬНОЙ <b>ПЛАТФОРМЕ</b> ДЛЯ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>41</b> УРОКОВ + ПРЕДОБУЧЕНИЕ
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>РАЗДАТОЧНЫЙ МАТЕРИАЛ</b>
+                            </li>
+                            <li>
+                                <b>ТЕСТЫ</b> НА ПРОВЕРКУ ЗНАНИЙ ПОСЛЕ КАЖДОГО УРОКА
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>СЕРТИФИКАТ</b> О ПРОХОЖДЕНИИ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К <b>БАЗЕ ДАННЫХ</b> (АКТУАЛЬНЫЕ НОРМАТИВНЫЕ АКТЫ,
+                                ПРАКТИЧЕСКИЙ МАТЕРИАЛ ОТ ЭКСПЕРТА И ЗАПИСЬ ВЕБИНАРОВ)
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ОБЩИЙ</b> ЧАТ
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ЗАКРЫТЫЙ</b> ЧАТ С КУРАТОРАМИ
+                            </li>
+                            <li>
+                                ОБЩАЯ ВСТРЕЧА С ЭКСПЕРТОМ <b>В ZOOM «ВОПРОС-ОТВЕТ» </b>ПО АКТУАЛЬНЫМ ИЗМЕНЕНИЯМ 2 РАЗА В
+                                        МЕСЯЦ В ПЕРИОД ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>ПОДДЕРЖКА</b> ОТ КУРАТОРОВ
+                            </li>
+                            <li>
+                                ДОСТУП К ОБУЧАЮЩЕМУ МАТЕРИАЛУ <b>6 МЕСЯЦЕВ</b> С МОМЕНТА ОПЛАТЫ
+                            </li>
+                        </ul>
+
+                        <p class="price-big text-center">158.000₸</p>
+
+                        <div class="text-center b">
+                            <a href="#form-reg" class="button-start">Начать обучение</a>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-holder-2">
+                            <img src="assets/images/goszakup.svg" alt="holder">
+                            <img src="assets/images/samruk.svg" alt="holder">
+                        </div>
+
+                        <h4 class="h4-title mobile text-center">“Универсал”</h4>
+
+                        <ul>
+                            <li>
+                                ОБУЧЕНИЕ С нуля НА ПЛОЩАДках - <b>государственных закупок</b> и <b class="cap">АО ФНБ "САМРУК КАЗЫНА"</b>
+                            </li>
+                            <li>
+                                ДОСТУП К СПЕЦИАЛЬНОЙ <b>ПЛАТФОРМЕ</b> ДЛЯ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>101</b> УРОКОВ + ПРЕДОБУЧЕНИЕ
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>РАЗДАТОЧНЫЙ МАТЕРИАЛ</b>
+                            </li>
+                            <li>
+                                <b>ТЕСТЫ</b> НА ПРОВЕРКУ ЗНАНИЙ ПОСЛЕ КАЖДОГО УРОКА
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>СЕРТИФИКАТ</b> О ПРОХОЖДЕНИИ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К <b>БАЗЕ ДАННЫХ</b> (АКТУАЛЬНЫЕ НОРМАТИВНЫЕ АКТЫ, ПРАКТИЧЕСКИЙ МАТЕРИАЛ ОТ
+                                ЭКСПЕРТА И ЗАПИСЬ ВЕБИНАРОВ)
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ОБЩИЙ</b> ЧАТ
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ЗАКРЫТЫЙ</b> ЧАТ С КУРАТОРАМИ
+                            </li>
+                            <li>
+                                <b>СОПРОВОЖДЕНИЕ</b> В ТЕЧЕНИЕ 6 МЕСЯЦЕВ
+                            </li>
+                            <li>
+                                <b>СКИДКА</b> НА ПОСЕЩЕНИЕ ОФЛАЙН СЕМИНАРА - <b>15%</b>
+                            </li>
+                            <li>
+                                ОБЩАЯ ВСТРЕЧА С ЭКСПЕРТОМ <b>В ZOOM «ВОПРОС-ОТВЕТ»</b> ПО АКТУАЛЬНЫМ ИЗМЕНЕНИЯМ 2 РАЗА В
+                                МЕСЯЦ В ПЕРИОД ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К ОБУЧАЮЩЕМУ МАТЕРИАЛУ <b>6 МЕСЯЦЕВ</b> С МОМЕНТА ОПЛАТЫ
+                            </li>
+                            <li>
+                                <b>БОНУС</b> - ОЗНАКОМЛЕНИЕ С ПЛАТФОРМАМИ НА <b>www.reestr.nadloc.kz</b> и
+                                <b>www.eep.mitwork.kz</b>
+                            </li>
+                        </ul>
+
+                        <p class="price-big text-center">283.200₸</p>
+
+                        <div class="text-center b">
+                            <a href="#form-reg" class="button-start">
+                                Начать обучение
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    <a href="#form-reg" class="button-start mobile-1">
+                        Начать обучение
+                    </a>
+                </div>
+
+
+                <div class="card-holder card-holder-1">
+                    <div class="card-item">
+                        <div class="img-holder-1">
+                            <img src="assets/images/goszakup.svg" alt="holder">
+                        </div>
+                        <h4 class="h4-title mobile text-center">“Государственные закупки”</h4>
+                        <ul>
+                            <li>
+                                ОБУЧЕНИЕ С нуля НА ПЛОЩАДКЕ <b>Государственных закупок</b>
+                            </li>
+                            <li>
+                                ДОСТУП К СПЕЦИАЛЬНОЙ <b>ПЛАТФОРМЕ</b> ДЛЯ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>60</b> УРОКОВ + ПРЕДОБУЧЕНИЕ
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>РАЗДАТОЧНЫЙ МАТЕРИАЛ</b>
+                            </li>
+                            <li>
+                                <b>ТЕСТЫ</b> НА ПРОВЕРКУ ЗНАНИЙ ПОСЛЕ КАЖДОГО УРОКА
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>СЕРТИФИКАТ</b> О ПРОХОЖДЕНИИ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К <b>БАЗЕ ДАННЫХ</b> (АКТУАЛЬНЫЕ НОРМАТИВНЫЕ АКТЫ,
+                                ПРАКТИЧЕСКИЙ МАТЕРИАЛ ОТ ЭКСПЕРТА И ЗАПИСЬ ВЕБИНАРОВ)
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ОБЩИЙ</b> ЧАТ
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ЗАКРЫТЫЙ</b> ЧАТ С КУРАТОРАМИ
+                            </li>
+                            <li>
+                                ОБЩАЯ ВСТРЕЧА С ЭКСПЕРТОМ <b>В ZOOM «ВОПРОС-ОТВЕТ»</b> ПО АКТУАЛЬНЫМ ИЗМЕНЕНИЯМ 2 РАЗА В
+                                МЕСЯЦ В ПЕРИОД ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>ПОДДЕРЖКА</b> ОТ КУРАТОРОВ
+                            </li>
+                            <li>
+                                ДОСТУП К ОБУЧАЮЩЕМУ МАТЕРИАЛУ <b>6 МЕСЯЦЕВ</b> С МОМЕНТА ОПЛАТЫ
+                            </li>
+                        </ul>
+
+                        <p class="price-big text-center">196.000₸</p>
+
+                        <div class="text-center b">
+                            <a href="#form-reg" class="button-start">Начать обучение</a>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-holder-1">
+                            <img src="assets/images/samruk.svg" alt="holder">
+                        </div>
+
+                        <h4 class="h4-title mobile text-center">“Закупки АО ФНБ САМРУК-КАЗЫНА”</h4>
+
+                        <ul>
+                            <li>
+                                ОБУЧЕНИЕ С нуля НА ПЛОЩАДКЕ <b class="cap">АО ФНБ "САМРУК КАЗЫНА"</b>
+                            </li>
+                            <li>
+                                   ДОСТУП К СПЕЦИАЛЬНОЙ <b>ПЛАТФОРМЕ</b> ДЛЯ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>41</b> УРОКОВ + ПРЕДОБУЧЕНИЕ
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>РАЗДАТОЧНЫЙ МАТЕРИАЛ</b>
+                            </li>
+                            <li>
+                                <b>ТЕСТЫ</b> НА ПРОВЕРКУ ЗНАНИЙ ПОСЛЕ КАЖДОГО УРОКА
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>СЕРТИФИКАТ</b> О ПРОХОЖДЕНИИ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К <b>БАЗЕ ДАННЫХ</b> (АКТУАЛЬНЫЕ НОРМАТИВНЫЕ АКТЫ,
+                                ПРАКТИЧЕСКИЙ МАТЕРИАЛ ОТ ЭКСПЕРТА И ЗАПИСЬ ВЕБИНАРОВ)
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ОБЩИЙ</b> ЧАТ
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ЗАКРЫТЫЙ</b> ЧАТ С КУРАТОРАМИ
+                            </li>
+                            <li>
+                                ОБЩАЯ ВСТРЕЧА С ЭКСПЕРТОМ <b>В ZOOM «ВОПРОС-ОТВЕТ» </b>ПО АКТУАЛЬНЫМ ИЗМЕНЕНИЯМ 2 РАЗА В
+                                        МЕСЯЦ В ПЕРИОД ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>ПОДДЕРЖКА</b> ОТ КУРАТОРОВ
+                            </li>
+                            <li>
+                                ДОСТУП К ОБУЧАЮЩЕМУ МАТЕРИАЛУ <b>6 МЕСЯЦЕВ</b> С МОМЕНТА ОПЛАТЫ
+                            </li>
+                        </ul>
+
+                        <p class="price-big text-center">158.000₸</p>
+
+                        <div class="text-center b">
+                            <a href="#form-reg" class="button-start">Начать обучение</a>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-holder-2">
+                            <img src="assets/images/goszakup.svg" alt="holder">
+                            <img src="assets/images/samruk.svg" alt="holder">
+                        </div>
+
+                        <h4 class="h4-title mobile text-center">“Универсал”</h4>
+
+                        <ul>
+                            <li>
+                                ОБУЧЕНИЕ С нуля НА ПЛОЩАДках - <b>Государственных зАКУПОК</b> И <b class="cap">АО ФНБ "САМРУК КАЗЫНА"</b>
+                            </li>
+                            <li>
+                                ДОСТУП К СПЕЦИАЛЬНОЙ <b>ПЛАТФОРМЕ</b> ДЛЯ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                <b>101</b> УРОКОВ + ПРЕДОБУЧЕНИЕ
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>РАЗДАТОЧНЫЙ МАТЕРИАЛ</b>
+                            </li>
+                            <li>
+                                <b>ТЕСТЫ</b> НА ПРОВЕРКУ ЗНАНИЙ ПОСЛЕ КАЖДОГО УРОКА
+                            </li>
+                            <li>
+                                ЭЛЕКТРОННЫЙ <b>СЕРТИФИКАТ</b> О ПРОХОЖДЕНИИ ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К <b>БАЗЕ ДАННЫХ</b> (АКТУАЛЬНЫЕ НОРМАТИВНЫЕ АКТЫ, ПРАКТИЧЕСКИЙ МАТЕРИАЛ ОТ
+                                ЭКСПЕРТА И ЗАПИСЬ ВЕБИНАРОВ)
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ОБЩИЙ</b> ЧАТ
+                            </li>
+                            <li>
+                                ДОСТУП В <b>ЗАКРЫТЫЙ</b> ЧАТ С КУРАТОРАМИ
+                            </li>
+                            <li>
+                                <b>СОПРОВОЖДЕНИЕ</b> В ТЕЧЕНИЕ 6 МЕСЯЦЕВ
+                            </li>
+                            <li>
+                                <b>СКИДКА</b> НА ПОСЕЩЕНИЕ ОФЛАЙН СЕМИНАРА - <b>15%</b>
+                            </li>
+                            <li>
+                                ОБЩАЯ ВСТРЕЧА С ЭКСПЕРТОМ <b>В ZOOM «ВОПРОС-ОТВЕТ»</b> ПО АКТУАЛЬНЫМ ИЗМЕНЕНИЯМ 2 РАЗА В
+                                МЕСЯЦ В ПЕРИОД ОБУЧЕНИЯ
+                            </li>
+                            <li>
+                                ДОСТУП К ОБУЧАЮЩЕМУ МАТЕРИАЛУ <b>6 МЕСЯЦЕВ</b> С МОМЕНТА ОПЛАТЫ
+                            </li>
+                            <li>
+                                <b>БОНУС</b> - ОЗНАКОМЛЕНИЕ С ПЛАТФОРМАМИ НА <b>www.reestr.nadloc.kz</b> и
+                                <b>www.eep.mitwork.kz</b>
+                            </li>
+                        </ul>
+
+                        <p class="price-big text-center">283.200₸</p>
+
+
+                        <div class="text-center b">
+                            <a href="#form-reg" class="button-start">
+                                Начать обучение
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="form-registration m-auto" id="form-reg">
+                <p class="form-title">Заполни заявку прямо сейчас</p>
+
+                <p class="text-center p-title">и получи доступ к предобучению состоящий из <b>11 уроков</b> в ПОДАРОК!
+                    🎁</p>
+
+                <form method="post" id="emailForm" class="form-container text-center mt-50">
+                    <div class="form-group">
+                        <input class="input-t w100p" type="text" id="fname" name="fname" placeholder="Имя" required>
+                        <div class="bt-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="input-t w100p" type="tel" id="pNumber" name="fphone" placeholder="Номeр телефона" 
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '-').replace(/(\..*)\./g, '$1');"
+                        required>
+                        <div class="bt-line"></div>
+                    </div>
+                    <div class="form-group mb-50">
+                        <label class="container">Я согласен на сбор и обработку персональных данных
+                            <input type="checkbox" id="fCheck"required>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <button class="form-button" type="submit" type="submit">Перезвоните мне</button>
+
+                    <button class="form-button mobile"  type="submit">Отправить</button>
+                </form>
+
+
+            </section>
+        </main>
+
+        <footer class="footer m-auto">
+            <div class="footer-socials">
+                <div class="d-flex align-center mb-20"><img style="position: relative; left: -7px;"
+                        src="assets/images/phone-logo.svg" alt="logo" widht="42" height="44">
+                    <a href="tel:+77015557015">+7 (701) 555 70-15</a>
+                </div>
+                <div class="d-flex align-center mb-30"><img class="mr-15" src="assets/images/instagram.svg" alt="logo"
+                        widht="30" height="30">
+                    <a href="https://instagram.com/vsezakupki?igshid=YmMyMTA2M2Y=">vsezakupki</a>
+                </div>
+                <div class="d-flex align-center"><img class="mr-15" src="assets/images/email-logo.svg" alt="logo"
+                        widht="25" height="22.5">
+                    <p>info@vsezakupki.kz</p>
+                </div>
+            </div>
+
+            <address class="footer-address">Copyright 2022© VSEZAKUPKI. All rights reserved</address>
+
+            <div class="logo footer__logo d-flex align-center">
+                <img src="assets/images/logo.svg" alt="logo" width="30" height="30" class="mr-5">
+                VSE<b>ZAKUPKI</b>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Sending Email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="module" src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
